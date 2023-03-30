@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="View.css">
+<script defer src="View.js"></script>
+</head>
+<html>
+    <body>
+        <h1>A. Student Details</h1>
+
+        <br></br>
+
+        <form action="View.php" method="post">
+            <div class="elem-group">
+              <label for="name">Name (Legal/ Official)  :</label>
+              <input type="text" id="name" name="name" placeholder="az za bin azza" required>
+            </div>
+            <div class="elem-group">
+              <label for="matrics">Matric No  :</label>
+              <input type="text" id="matrics" name="matrics" placeholder="1234567" required>
+            </div>
+            <hr>
+            <div class="elem-group">
+                <label for="caddress">Current Address    :</label>
+                <textarea id="caddress" name="cddress" placeholder="12, IIUM, Near Toll, 12345, Gombak" required></textarea>
+            </div>
+            <div class="elem-group">
+                <label for="haddress">Home Address    :</label>
+                <textarea id="haddress" name="hddress" placeholder="12, IIUM, Near Toll, 12345, Gombak" required></textarea>
+            </div>
+            <div class="elem-group">
+                <label for="email">E-mail (Gmail Account)   :</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+            <div class="elem-group">
+                <label for="phone">Mobile Phone No  :</label>
+                <input type="tel" id="mphone" name="mphone" placeholder="+60123456789" required>
+            </div>
+            <div class="elem-group">
+                <label for="phone">Home Phone No (Emergency) :</label>
+                <input type="tel" id="hphone" name="hphone" placeholder="031234567" required>
+            </div>
+            <button type="submit" onclick="validate()">Submit</button>
+          </form>
+        </body>
+</html>
